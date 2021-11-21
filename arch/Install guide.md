@@ -209,4 +209,4 @@ reboot
 ## Next Steps
 
 Up to here I have a full working base arch install with only the root user.
-I have a wite canvas :)
+I have a white canvas :)
