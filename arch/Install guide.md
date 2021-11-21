@@ -217,7 +217,6 @@ I have a white canvas :)
 
 ```bash
 pacman -S sudo vi
-usermod -aG wheel,audio,video,optical,storage
 visudo
 ```
 
@@ -230,6 +229,7 @@ visudo
 ```bash
 useradd -m {user_name}
 passwd {user_name}
+usermod -aG wheel,audio,video,optical,storage {user_name}
 ```
 
 > Change to user with
@@ -263,5 +263,5 @@ passwd {user_name}
 ### Instalation
 
 ```bash
-sudo pacman -
+sudo pacman -Syu i3-gaps
 ```
