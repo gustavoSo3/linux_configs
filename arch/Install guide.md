@@ -156,19 +156,19 @@ Write
 vim /etc/hostname
 ```
 
-Write
-
-> arch
+> Write
+>
+> > arch
 
 ```bash
 vim /etc/hosts
 ```
 
-Write
-
-> 127.0.0.1 localhost
-> ::1 localhost
-> 127.0.1.1 arch.localdomain arch
+> Write
+>
+> > 127.0.0.1 localhost
+> > ::1 localhost
+> > 127.0.1.1 arch.localdomain arch
 
 ## Set Root password
 
@@ -176,7 +176,7 @@ Write
 passwd
 ```
 
-> Write Password
+> Password
 
 ## Install extra packages
 
@@ -210,3 +210,58 @@ reboot
 
 Up to here I have a full working base arch install with only the root user.
 I have a white canvas :)
+
+## Add a user
+
+### Requires
+
+```bash
+pacman -S sudo vi
+usermod -aG wheel,audio,video,optical,storage
+visudo
+```
+
+> Uncomment
+>
+> > %wheel ALL=(ALL) ALL
+
+### Create user
+
+```bash
+useradd -m {user_name}
+passwd {user_name}
+```
+
+> Change to user with
+>
+> > ```bash
+> > su {user_name}
+> > ```
+
+## Must install
+
+- nvidia
+
+## Apps lists
+
+- Firefox
+- Alacritty
+- Feh
+- Steam
+- ```bash
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  ```
+
+## Install window manager
+
+- Posibilities
+- [x] i3-gaps
+- [ ] dwm
+
+### Instalation
+
+```bash
+sudo pacman -
+```
