@@ -181,7 +181,7 @@ passwd
 ## Install extra packages
 
 ```bash
-pacman -S man-db man-pages texinfo wget curl inetutils netctl dhcpcd networkmanager dialog linux-headers git
+pacman -S man-db man-pages texinfo wget curl inetutils linux-headers git
 ```
 
 ## Set bootloader
@@ -191,6 +191,14 @@ pacman -S grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+Si no jala poner
+
+GRUB_DISABLE_OS_PROBER=false
+
+en 
+
+/etc/default/grub
 
 ## finalize
 
