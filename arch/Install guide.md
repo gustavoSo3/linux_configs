@@ -1,5 +1,11 @@
 # My personal arch install Guide
 
+## Reference 
+
+https://www.youtube.com/watch?v=C3D_qzw94v8
+https://wiki.archlinux.org/title/Installation_guide
+https://wiki.archlinux.org/title/GRUB#Detecting_other_operating_systems
+
 ## First verfy UFI
 
 ```bash
